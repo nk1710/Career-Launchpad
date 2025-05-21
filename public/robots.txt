@@ -1,0 +1,8 @@
+# robots.txt for https://placementinstitute.com
+
+# Allow all web crawlers to access the entire site
+User-agent: *
+Disallow: 
+
+# Sitemap location (ensure this URL matches your actual sitemap location)
+Sitemap: https://placementinstitute.com/sitemap.xml
