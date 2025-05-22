@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
+
 const CourseUse = () => {
   // Define card content for programming and development
   const useCases = [
@@ -91,10 +92,11 @@ const CourseUse = () => {
     setIsVisible(true);
     
     // Add 3D tilt effect for cards
-    const cards = cardsRef.current;
-    
+    // const cards = cardsRef.current;
+    const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
       if (!card) return;
+      
       
       const handleMouseMove = (e) => {
         const cardRect = card.getBoundingClientRect();
